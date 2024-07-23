@@ -10,7 +10,7 @@ import {
 } from "react-icons/md";
 import { BiExport } from "react-icons/bi";
 import { useEffect, useState } from "react";
-import ModalComponent from "./Modal";
+import RefundModal from "./RefundModal";
 import ConfirmationModal from "./ConfirmationModal";
 import SuccessModal from "./SuccessModal";
 
@@ -346,10 +346,7 @@ const TableHeader = ({
         </div>
 
         {modalState == "refund" && (
-          <ModalComponent
-            setModalState={setModalState}
-            modalState={modalState}
-          />
+          <RefundModal setModalState={setModalState} modalState={modalState} />
         )}
         {modalState == "confirm" && (
           <ConfirmationModal

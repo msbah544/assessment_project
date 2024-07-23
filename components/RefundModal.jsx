@@ -26,7 +26,7 @@ const customStyles = {
     borderRadius: "20px",
   },
 };
-const ModalComponent = ({ setModalState, modalState }) => {
+const RefundModal = ({ setModalState, modalState }) => {
   const [countryCode, setCountryCode] = useState("+220");
   const [openCodeDropDown, setOpenCodeDropDown] = useState(false);
   const [phone, setPhone] = useState("");
@@ -110,4 +110,4 @@ const ModalComponent = ({ setModalState, modalState }) => {
   );
 };
 
-export default ModalComponent;
+export default RefundModal;
