@@ -5,6 +5,7 @@ import Table from "@/components/Table";
 export default function Home() {
   return (
     <div className="">
+      {/* che boy */}
       <Table />
     </div>
   );
